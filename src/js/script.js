@@ -16,10 +16,12 @@ $(document).ready(function() {
 			$(this).parent().find('.search-close').hide({
 				duration: 200,
 			});
+			$('.search__result').hide();
 		} else if ($(this).val() != "") {
 			$(this).parent().find('.search-close').show({
 				duration: 200,
 			});
+			$('.search__result').show();
 		}
 	})
 })

@@ -25,6 +25,10 @@
 	box-shadow: 0px 2px 4px rgba(28, 65, 84, 0.08)
 	border-radius: 8px
 	margin-bottom: 24px
+	cursor: pointer
+	transition: 0.2s
+	&:hover
+		box-shadow: 0px 42.3px 112.8px rgba(28, 65, 84, 0.12), 0px 21.15px 56.4px rgba(28, 65, 84, 0.1), 0px 10.575px 21.15px rgba(28, 65, 84, 0.1), 0px 7px 10px rgba(28, 65, 84, 0.08)
 	p
 		font-family: $RB
 		font-size: 10px
@@ -50,6 +54,47 @@
 		font-feature-settings: 'pnum' on, 'lnum' on
 		color: #607D8B
 		padding-bottom: 16px
+	&__dosage
+		display: inline-block
+		font-family: $RM
+		font-size: 13px
+		line-height: 16px
+		font-feature-settings: 'pnum' on, 'lnum' on
+		color: #607D8B
+		svg
+			margin-right: 4px
+	&__price
+		display: inline-block
+		font-family: $RB
+		font-size: 17px
+		line-height: 16px
+		font-feature-settings: 'pnum' on, 'lnum' on
+		color: $text-black
+		float: right
+.result-box
+	width: 100%
+	padding: 16px
+	background: #FFFFFF
+	border: 1px solid #E9EDF1
+	border-radius: 8px
+	text-align: left
+	p
+		font-family: $RB
+		font-size: 10px
+		line-height: 16px
+		letter-spacing: 1px
+		text-transform: uppercase
+		font-feature-settings: 'pnum' on, 'lnum' on
+		color: $red
+		padding-bottom: 4px
+	&__title
+		display: block
+		font-family: $RB
+		font-size: 19px
+		line-height: 22px
+		font-feature-settings: 'pnum' on, 'lnum' on
+		color: $text-black
+		padding-bottom: 10px
 	&__dosage
 		display: inline-block
 		font-family: $RM
