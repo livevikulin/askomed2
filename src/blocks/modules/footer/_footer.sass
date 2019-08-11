@@ -1,0 +1,85 @@
+footer
+	padding-bottom: 60px
+	position: relative
+	&:before
+		position: absolute
+		content: ''
+		width: 100%
+		height: 5px
+		bottom: 0
+		background: linear-gradient(90deg, #0064AA 0%, #A04678 52.6%, #DC1E1E 100%)
+.footer
+	display: flex
+	ul
+		list-style: none
+		margin-right: 60px
+		&:last-child
+			margin-right: 0
+		li
+			margin-bottom: 16px
+			&:last-child
+				margin-bottom: 0
+		a
+			font-family: $RM
+			font-size: 15px
+			line-height: 25px
+			font-feature-settings: 'pnum' on, 'lnum' on
+			color: #607D8B
+			text-decoration: none
+			border-bottom: 1px solid transparent
+			&:hover
+				border-bottom: 1px solid #607D8B
+.contacts
+	margin: 0 0 0 auto
+	span
+		display: block
+		font-family: $R
+		font-size: 13px
+		line-height: 16px
+		font-feature-settings: 'pnum' on, 'lnum' on
+		color: $text-black
+		opacity: 0.5
+	&__phone
+		font-family: $R
+		font-weight: 600
+		font-size: 15px
+		line-height: 24px
+		font-feature-settings: 'pnum' on, 'lnum' on
+		color: $text-black
+		text-decoration: none
+	&__social
+		display: flex
+		align-items: center
+		padding-top: 14px
+		a
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 42px
+			height: 42px
+.vk
+	background: #4C75A3
+.fb
+	background: #3C5A99
+.yt
+	background: #C4302B
+.insta
+	background: linear-gradient(220.6deg, #405DE6 9%, #5851DB 19.64%, #833AB4 26.15%, #C13584 36.24%, #E1306C 45.67%, #FD1D1D 55.46%, #F56040 65.92%, #F77737 75.04%, #FCAF45 84.45%, #FFDC80 90.73%)
+
+@media (max-width: 768px)
+	footer
+		.container
+			max-width: 100%
+	.footer
+		display: flex
+		flex-direction: column
+		margin-top: -140px
+		ul
+			margin-right: 0
+			li 
+				padding: 16px 16px
+				margin-bottom: 0
+				border-bottom: 1px solid #E9EDF1
+	.contacts
+		margin: 24px auto 0
+		text-align: center

@@ -51,7 +51,9 @@ const webpackConfig = require("./webpack.config.js"),
 			dist: "./dist/styles/",
 			watch: [
 				"./src/blocks/**/*.scss",
-				"./src/styles/**/*.scss"
+				"./src/styles/**/*.scss",
+				"./src/blocks/**/*.sass",
+				"./src/styles/**/*.sass"
 			]
 		},
 		scripts: {

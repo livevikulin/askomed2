@@ -1,0 +1,153 @@
+* 
+	box-sizing: border-box
+.main
+	padding: 0 32px 30px
+	position: relative
+	top: -80px
+	&__text
+		display: block
+		font-family: $RM
+		font-size: 17px
+		line-height: 20px
+		font-feature-settings: 'pnum' on, 'lnum' on
+		color: $color-white
+	&__block
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		padding-top: 12px
+.card
+	width: 100%
+	max-width: 304px
+	padding: 16px
+	background: #FFFFFF
+	border: 1px solid #E9EDF1
+	box-shadow: 0px 2px 4px rgba(28, 65, 84, 0.08)
+	border-radius: 8px
+	margin-bottom: 24px
+	p
+		font-family: $RB
+		font-size: 10px
+		line-height: 16px
+		letter-spacing: 1px
+		text-transform: uppercase
+		font-feature-settings: 'pnum' on, 'lnum' on
+		color: $red
+		padding-bottom: 4px
+	&__title
+		display: block
+		font-family: $RB
+		font-size: 19px
+		line-height: 22px
+		font-feature-settings: 'pnum' on, 'lnum' on
+		color: $text-black
+		padding-bottom: 10px
+	&__text
+		display: block
+		font-family: $RM
+		font-size: 13px
+		line-height: 16px
+		font-feature-settings: 'pnum' on, 'lnum' on
+		color: #607D8B
+		padding-bottom: 16px
+	&__dosage
+		display: inline-block
+		font-family: $RM
+		font-size: 13px
+		line-height: 16px
+		font-feature-settings: 'pnum' on, 'lnum' on
+		color: #607D8B
+		svg
+			margin-right: 4px
+	&__price
+		display: inline-block
+		font-family: $RB
+		font-size: 17px
+		line-height: 16px
+		font-feature-settings: 'pnum' on, 'lnum' on
+		color: $text-black
+		float: right
+
+.product
+	display: flex
+	justify-content: center
+	padding: 8px 0 32px
+	background: url('../../img/bg.jpg') no-repeat
+	border-radius: 0 0 15px 15px
+	margin-bottom: 170px
+	&__content
+		width: 100%
+		max-width: 304px
+		p
+			font-family: $RB
+			font-size: 10px
+			line-height: 16px
+			letter-spacing: 1px
+			text-transform: uppercase
+			font-feature-settings: 'pnum' on, 'lnum' on
+			color: $color-white
+			opacity: 0.7
+			margin-top: 16px
+
+		span 
+			color: $color-white
+		a 
+			display: block
+			font-family: $RM
+			font-size: 15px
+			line-height: 16px
+			text-align: center
+			color: $text-black
+			padding: 8px 0
+			background: #E8F2FF
+			border-radius: 8px
+			margin-top: 24px
+			text-decoration: none
+	&__title
+		font-family: $RB
+		font-size: 19px
+		line-height: 22px
+		font-feature-settings: 'pnum' on, 'lnum' on
+	&__country
+		font-family: $RM
+		font-size: 17px
+		line-height: 20px
+		font-feature-settings: 'pnum' on, 'lnum' on
+	&__name
+		font-family: $RM
+		font-size: 17px
+		line-height: 20px
+		font-feature-settings: 'pnum' on, 'lnum' on
+	&__dosage
+		display: flex
+		align-items: center
+		font-family: $RM
+		font-size: 15px
+		line-height: 16px
+		font-feature-settings: 'pnum' on, 'lnum' on
+		svg
+			margin-right: 4px
+.pay-btn
+	position: fixed
+	top: 420px
+	left: 50%
+	transform: translateX(-50%)
+	display: block
+	width: 100%
+	max-width: 304px
+	font-family: $RB
+	font-size: 17px
+	line-height: 16px
+	text-align: center
+	color: $color-white
+	margin: 0 auto
+	padding: 20px 0
+	background: $red
+	border-radius: 8px
+	text-decoration: none
+	z-index: 999
+
+@media (max-width: 768px)
+	.main
+		padding: 0 16px 0px
+		top: -165px
