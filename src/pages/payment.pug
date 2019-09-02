@@ -1,0 +1,74 @@
+extends ../views/layouts/default
+block variables
+	- var title = "Оплата";
+	- var main = true;
+	- var footer = true;
+	- var desktop = false;
+	- var mobile = true;
+
+block content
+	main
+		.container
+			.payment
+				._content
+					span._title Оплата услуги
+					p Препарат
+					span._name Иммуноглобулин п/в клещевого энцефалита
+					p Производитель
+					span._subtitle Россия
+					p Название услуги
+					span._subtitle Серопрофилактика клещевого энцефалита
+					p По адресу
+					span._subtitle г. Новосибирск, ЦГБ № 4
+					p Услуга вакцинации стоимостью
+					span._subtitle 5200 р.
+			.pay
+				form(action="#")
+					p Контактные данные
+					._block
+						input(type="text" placeholder="Фамилия")
+						input(type="text" placeholder="Имя")
+						input(type="text" placeholder="Отчество")
+					p Выслать чек
+					._block
+						.input
+							input(type="radio" name="check" id="on_phone" checked)
+							label(for="on_phone") На телефон по SMS
+						.input
+							input(type="radio" name="check" id="on_mail")
+							label(for="on_mail") На электронную почту
+						.input
+							input(type="radio" name="check" id="not_delivery")
+							label(for="not_delivery") Не присылать чек
+					p Данные карты
+					._block
+						.input-card
+							input(type="text" placeholder="0000 0000 0000 0000" id="bankCard")
+							label(for="#") Номер карты
+						._box
+							.input-month
+								input(type="text" placeholder="07/22" id="cardMonth")
+								label(for="#") месяц / год
+							.input-security
+								input(type="text" placeholder="000" id="securityCard")
+								label(for="#") Код безопасности
+						.input-card
+							input(type="text" placeholder="Фамилия Имя")
+							label(for="#") Владелец карты
+					p._red Важно!
+					span._warning Перед оплатой уточните наличие вакцины в выбранной медицинской организации и зарезервируйте её на своё имя
+					._verification
+						input(type="checkbox" name="verification" id="presence")
+						label(for="presence") Подтверждаю, что убедился(лась) в наличии вакцины
+					._verification
+						input(type="checkbox" name="verification" id="accept")
+						label(for="accept") 
+							span Подтверждаю, что ознакомлен(а) с 
+							a(href="#") договором
+							span , принимаю его условия и подтверждаю согласие на 
+							a(href="#") обработку персональных данных
+					span._cost-title Всего к оплате
+					span._cost 5240 р.
+					a(href="#")._button Оплатить
+					a(href="#")._offer Юридическая информация
+					a(href="#")._offer Публичная оферта
