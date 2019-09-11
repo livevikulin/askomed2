@@ -2164,7 +2164,7 @@ h1, h2, h3, h4, h5, h6, ul, p {
   position: absolute;
   bottom: 10px;
   left: 50%;
-  transform: translate(-50%, 110%);
+  transform: translate(-50%, 150%);
   transition: 0.3s; }
   .modal__close {
     display: flex;
@@ -2249,8 +2249,14 @@ h1, h2, h3, h4, h5, h6, ul, p {
   opacity: 0.2;
   transition: 0.2s; }
 
+@keyframes modal {
+  0% {
+    transform: translate(-50%, 150%); }
+  100% {
+    transform: translate(-50%, 0); } }
+
 .modals-active {
-  transform: translate(-50%, 0%); }
+  animation: modal 0.3s ease forwards; }
 
 .payment {
   display: flex;

@@ -1,6 +1,7 @@
 import "jquery";
 import "jquery-ui-bundle";
 import "jquery.maskedinput";
+import "@fancyapps/fancybox";
 
 $(document).ready(function() {
 
