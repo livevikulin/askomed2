@@ -2072,7 +2072,7 @@ h1, h2, h3, h4, h5, h6, ul, p {
   padding: 8px 0 32px;
   background: url("../img/bg.png") no-repeat;
   border-radius: 0 0 15px 15px;
-  margin-bottom: 170px; }
+  margin-bottom: 30px; }
   .product__content {
     width: 100%;
     max-width: 304px; }
@@ -2126,10 +2126,6 @@ h1, h2, h3, h4, h5, h6, ul, p {
       margin-right: 4px; }
 
 .pay-btn {
-  position: fixed;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
   display: block;
   width: 100%;
   max-width: 304px;
@@ -2138,7 +2134,7 @@ h1, h2, h3, h4, h5, h6, ul, p {
   line-height: 16px;
   text-align: center;
   color: #ffffff;
-  margin: 0 auto;
+  margin: 0 auto 30px;
   padding: 20px 0;
   background: #C94666;
   border-radius: 8px;
