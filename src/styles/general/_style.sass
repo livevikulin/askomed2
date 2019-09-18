@@ -16,6 +16,43 @@
 		justify-content: space-between
 		flex-wrap: wrap
 		padding-top: 12px
+.pagination
+	border: 1px solid #BDDEE9
+	border-radius: 8px
+	text-align: center
+	position: relative
+	&-num
+		padding: 7px 0
+		a
+			font-family: $R
+			font-size: 18px
+			line-height: 27px
+			text-align: center
+			font-feature-settings: 'pnum' on, 'lnum' on
+			color: #454B52
+			padding: 10px 20px
+			border-left: 1px solid #BDDEE9
+			border-right: 1px solid #BDDEE9
+			text-decoration: none
+			transition: 0.2s
+			&:nth-child(1n+2)
+				border-left: none
+			&:hover
+				background: #BDDEE9
+	&-arrow
+		display: flex
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		transition: 0.2s
+		&__prev
+			left: 21px
+			&:hover
+				left: 15px
+		&__next
+			right: 21px
+			&:hover
+				right: 15px
 .card
 	width: 100%
 	max-width: 304px
@@ -686,4 +723,17 @@
 			width: 288px
 		&__sub
 			width: 90%
-		
+	.pagination
+		&-num
+			padding: 0
+			a
+				padding: 4px 10px
+		&-arrow
+			&__prev
+				left: 15px
+				&:hover
+					left: 15px
+			&__next
+				right: 15px
+				&:hover
+					right: 15px
