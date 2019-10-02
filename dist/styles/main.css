@@ -1968,6 +1968,44 @@ h1, h2, h3, h4, h5, h6, ul, p {
     flex-wrap: wrap;
     padding-top: 12px; }
 
+.pagination {
+  border: 1px solid #BDDEE9;
+  border-radius: 8px;
+  text-align: center;
+  position: relative; }
+  .pagination-num {
+    padding: 7px 0; }
+    .pagination-num a {
+      font-family: "Raleway Regular";
+      font-size: 18px;
+      line-height: 27px;
+      text-align: center;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: #454B52;
+      padding: 10px 20px;
+      border-left: 1px solid #BDDEE9;
+      border-right: 1px solid #BDDEE9;
+      text-decoration: none;
+      transition: 0.2s; }
+      .pagination-num a:nth-child(1n+2) {
+        border-left: none; }
+      .pagination-num a:hover {
+        background: #BDDEE9; }
+  .pagination-arrow {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.2s; }
+    .pagination-arrow__prev {
+      left: 21px; }
+      .pagination-arrow__prev:hover {
+        left: 15px; }
+    .pagination-arrow__next {
+      right: 21px; }
+      .pagination-arrow__next:hover {
+        right: 15px; }
+
 .card {
   width: 100%;
   max-width: 304px;
@@ -2072,7 +2110,7 @@ h1, h2, h3, h4, h5, h6, ul, p {
   padding: 8px 0 32px;
   background: url("../img/bg.png") no-repeat;
   border-radius: 0 0 15px 15px;
-  margin-bottom: 170px; }
+  margin-bottom: 30px; }
   .product__content {
     width: 100%;
     max-width: 304px; }
@@ -2126,10 +2164,6 @@ h1, h2, h3, h4, h5, h6, ul, p {
       margin-right: 4px; }
 
 .pay-btn {
-  position: fixed;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
   display: block;
   width: 100%;
   max-width: 304px;
@@ -2138,7 +2172,7 @@ h1, h2, h3, h4, h5, h6, ul, p {
   line-height: 16px;
   text-align: center;
   color: #ffffff;
-  margin: 0 auto;
+  margin: 0 auto 30px;
   padding: 20px 0;
   background: #C94666;
   border-radius: 8px;
@@ -2901,10 +2935,22 @@ footer {
       width: 288px; }
     .thanks-block__sub {
       width: 90%; }
+  .pagination-num {
+    padding: 0; }
+    .pagination-num a {
+      padding: 4px 10px; }
+  .pagination-arrow__prev {
+    left: 15px; }
+    .pagination-arrow__prev:hover {
+      left: 15px; }
+  .pagination-arrow__next {
+    right: 15px; }
+    .pagination-arrow__next:hover {
+      right: 15px; }
   .header {
     padding: 32px 16px 208px;
     border-radius: 0;
-    background: url("../img/bg-mobile.jpg") no-repeat;
+    background: url("../img/bg-mobile.png") no-repeat;
     text-align: left; }
   .header-next {
     padding: 11px 16px; }
