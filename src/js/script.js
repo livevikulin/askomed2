@@ -17,6 +17,7 @@ function chechErrorForm(form, check=false, star=false, radio=false){
                         }
                     break;
                 }
+                
             }else if ($(elem).val() == '') {
                 error = 'text';
                 errEach='Y';
@@ -222,17 +223,6 @@ $(document).ready(function() {
 			$(modal).find('[name="quant"]').val(quant);
 			$(modal).find('.modal__cost').text(moneyFormat(fulp)+' руб.');
 			$('.disabled-btn').removeClass('disabled-btn')
-		}
-	});
-	
-	
-	
-	$('.modals').on('click', function(e) {
-		let $el = $(e.target);
-		let $modal = $('.modals');
-		
-		if ($el.hasClass('modals')) {
-			$modal.fadeOut(100);
 		}
 	});
 	
