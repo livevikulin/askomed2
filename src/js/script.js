@@ -226,6 +226,15 @@ $(document).ready(function() {
 		}
 	});
 	
+	$('.modals').on('click', function(e) {
+		let $el = $(e.target);
+		let $modal = $('.modals');
+
+		if ($el.hasClass('modals')) {
+			$modal.fadeOut(100);
+		}
+	});
+	
 	$("#bankCard").mask("9999 9999 9999 9999");
 	$("#cardMonth").mask("99/99");
 	$("#securityCard").mask("999");
