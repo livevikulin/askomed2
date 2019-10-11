@@ -2960,8 +2960,7 @@ footer {
     max-width: 100%; }
   .footer {
     display: flex;
-    flex-direction: column;
-    margin-top: -140px; }
+    flex-direction: column; }
     .footer ul {
       margin-right: 0; }
       .footer ul li {
