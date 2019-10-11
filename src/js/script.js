@@ -116,7 +116,23 @@ $(document).ready(function() {
 	$('.ui-selectmenu-menu').on('click', function() {
 		$('.ui-selectmenu-icon').removeClass('arrow');
 	});
-
+	$('[data-click="subscrip"]').on('click', function() {
+		var $this = $(this);
+		if($this.parent().find('[name="mail_sub"]').val()){
+			$.ajax({
+				url: "/local/scripts/ajax.php",
+				type: "post",
+				dataType: "json",
+				data: {
+					'mail':$this.parent().find('[name="mail_sub"]').val(),
+					'type':'subscr'
+				},
+				success: function (data) {
+					$this.remove();
+				}
+			});
+		}
+	});
 	$('#search').on('change input', function() {
 		var value = $(this).val(), sec = $(this).data('sec'), $this = $(this);
 		if (value == "") {
