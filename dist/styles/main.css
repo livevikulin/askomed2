@@ -2007,8 +2007,7 @@ h1, h2, h3, h4, h5, h6, ul, p {
         right: 15px; }
 
 .card {
-  width: 100%;
-  max-width: 304px;
+  width: 304px;
   padding: 16px;
   background: #FFFFFF;
   border: 1px solid #E9EDF1;
