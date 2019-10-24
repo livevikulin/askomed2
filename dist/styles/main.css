@@ -2178,6 +2178,8 @@ h1, h2, h3, h4, h5, h6, ul, p {
   background: #C94666;
   border-radius: 8px;
   text-decoration: none;
+  border: none;
+  outline: none;
   z-index: 999; }
 
 .modals {
