@@ -17,7 +17,6 @@ function chechErrorForm(form, check=false, star=false, radio=false){
                         }
                     break;
                 }
-                
             }else if ($(elem).val() == '') {
                 error = 'text';
                 errEach='Y';
@@ -134,7 +133,7 @@ $(document).ready(function() {
 		}
 	});
 	$('#search').on('change input', function() {
-		var value = $(this).val(), sec = $(this).data('sec'), $this = $(this);
+		var value = $(this).val(), sec = $(this).data('sec'), raz = $(this).data('raz'), $this = $(this);
 		if (value == "") {
 			$this.parent().find('.search-close').hide({
 				duration: 200,
@@ -153,6 +152,7 @@ $(document).ready(function() {
 				dataType: "json",
 				data: {
 					'sec':sec,
+					'raz':raz,
 					'query':value,
 					'type':'search'
 				},
@@ -233,7 +233,11 @@ $(document).ready(function() {
 		} else if(active.val() != "") {
 			var modal = active.closest('.modal');
 			var price = $(document).find('input[name="price"]').val();
-			var quant = Math.ceil(Number(active.val())/10)
+			if(active.closest('.modal').find('[name="kg"]').val()){
+				var quant = Math.ceil(Number(active.val())/10);
+			}else{
+				var quant = active.val();
+			}
 			var fulp = quant*Number(price);
 			$(modal).find('[name="sum"]').val(fulp);
 			$(modal).find('[name="quant"]').val(quant);
@@ -251,8 +255,11 @@ $(document).ready(function() {
 		}
 	});
 	
+<<<<<<< HEAD
 	//смотреть вот сюда
 	$('[name="phone"]').mask("+7 (999) 999 99 99");
+=======
+>>>>>>> 910f95db4c150d82a597c43062f7c9f6e8a588c9
 	$("#bankCard").mask("9999 9999 9999 9999");
 	$("#cardMonth").mask("99/99");
 	$("#securityCard").mask("999");
