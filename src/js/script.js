@@ -256,6 +256,7 @@ $(document).ready(function() {
 		}
 	});
 	
+	$('[name="phone"]').mask("+7 (999) 999 99 99");
 	$("#bankCard").mask("9999 9999 9999 9999");
 	$("#cardMonth").mask("99/99");
 	$("#securityCard").mask("999");
