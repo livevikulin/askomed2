@@ -2070,6 +2070,8 @@ h1, h2, h3, h4, h5, h6, ul, p {
   background: #FFFFFF;
   border: 1px solid #E9EDF1;
   text-align: left; }
+  .result-box a {
+    text-decoration: none; }
   .result-box p {
     font-family: "Raleway Bold";
     font-size: 10px;

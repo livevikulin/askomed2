@@ -255,11 +255,8 @@ $(document).ready(function() {
 		}
 	});
 	
-<<<<<<< HEAD
 	//смотреть вот сюда
 	$('[name="phone"]').mask("+7 (999) 999 99 99");
-=======
->>>>>>> 910f95db4c150d82a597c43062f7c9f6e8a588c9
 	$("#bankCard").mask("9999 9999 9999 9999");
 	$("#cardMonth").mask("99/99");
 	$("#securityCard").mask("999");
