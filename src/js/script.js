@@ -134,7 +134,7 @@ $(document).ready(function() {
 		}
 	});
 	$('#search').on('change input', function() {
-		var value = $(this).val(), sec = $(this).data('sec'), $this = $(this);
+		var value = $(this).val(), sec = $(this).data('sec'), raz = $(this).data('raz'), $this = $(this);
 		if (value == "") {
 			$this.parent().find('.search-close').hide({
 				duration: 200,
@@ -153,6 +153,7 @@ $(document).ready(function() {
 				dataType: "json",
 				data: {
 					'sec':sec,
+					'raz':raz,
 					'query':value,
 					'type':'search'
 				},
@@ -233,8 +234,17 @@ $(document).ready(function() {
 		} else if(active.val() != "") {
 			var modal = active.closest('.modal');
 			var price = $(document).find('input[name="price"]').val();
-			var quant = Math.ceil(Number(active.val())/10)
+			var price_dop = $(document).find('input[name="price_dop"]').val();
+			if(active.closest('.modal').find('[name="kg"]').val()){
+				var quant = Math.ceil(Number(active.val())/10);
+			}else{
+				var quant = active.val();
+			}
 			var fulp = quant*Number(price);
+
+			if(price_dop)
+			fulp = fulp+Number(price_dop);
+
 			$(modal).find('[name="sum"]').val(fulp);
 			$(modal).find('[name="quant"]').val(quant);
 			$(modal).find('.modal__cost').text(moneyFormat(fulp)+' руб.');
