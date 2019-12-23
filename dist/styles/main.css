@@ -2738,6 +2738,17 @@ h1, h2, h3, h4, h5, h6, ul, p {
     box-shadow: 0px 42.3px 112.8px rgba(28, 65, 84, 0.12), 0px 21.15px 56.4px rgba(28, 65, 84, 0.1), 0px 10.575px 21.15px rgba(28, 65, 84, 0.1), 0px 7px 10px rgba(28, 65, 84, 0.08);
     border-radius: 0 0 8px 8px;
     z-index: 999; }
+  .search-result__all {
+    display: block;
+    font-family: "Raleway Bold";
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #C94666;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none; }
 
 .ui-selectmenu-button {
   display: block;

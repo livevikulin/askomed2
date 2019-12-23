@@ -184,6 +184,12 @@ $(document).ready(function() {
 		}
 	});
 	
+	var $closeBtn = $('.search-close');
+	
+	$closeBtn.on('click', function() {
+		$('.search__result').hide();
+	});
+	
 	var $input = $('input');
 	$input.on('change', function() {
 		if ($(this).val() == "") {
@@ -233,8 +239,7 @@ $(document).ready(function() {
 		} else if(active.val() != "") {
 			var modal = active.closest('.modal');
 			var price = $(document).find('input[name="price"]').val();
-<<<<<<< HEAD
-=======
+
 			var price_dop = $(document).find('input[name="price_dop"]').val();
 			if(active.closest('.modal').find('[name="kg"]').val()){
 				var quant = Math.ceil(Number(active.val())/10);
