@@ -233,12 +233,20 @@ $(document).ready(function() {
 		} else if(active.val() != "") {
 			var modal = active.closest('.modal');
 			var price = $(document).find('input[name="price"]').val();
+<<<<<<< HEAD
+=======
+			var price_dop = $(document).find('input[name="price_dop"]').val();
+>>>>>>> 7dfe56dec5e45f3801acebbea3435250cfe24e64
 			if(active.closest('.modal').find('[name="kg"]').val()){
 				var quant = Math.ceil(Number(active.val())/10);
 			}else{
 				var quant = active.val();
 			}
 			var fulp = quant*Number(price);
+
+			if(price_dop)
+			fulp = fulp+Number(price_dop);
+
 			$(modal).find('[name="sum"]').val(fulp);
 			$(modal).find('[name="quant"]').val(quant);
 			$(modal).find('.modal__cost').text(moneyFormat(fulp)+' руб.');
