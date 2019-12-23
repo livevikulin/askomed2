@@ -236,7 +236,6 @@ $(document).ready(function() {
 <<<<<<< HEAD
 =======
 			var price_dop = $(document).find('input[name="price_dop"]').val();
->>>>>>> 7dfe56dec5e45f3801acebbea3435250cfe24e64
 			if(active.closest('.modal').find('[name="kg"]').val()){
 				var quant = Math.ceil(Number(active.val())/10);
 			}else{
